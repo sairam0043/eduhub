@@ -52,6 +52,12 @@ body {
     font-size: 1.8rem;
 }
 
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.75rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -180,6 +186,12 @@ body {
 .logo i {
     font-size: 3rem;
     color: #FF6B35;
+}
+
+.main-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
 }
 
 .logo h1 {
