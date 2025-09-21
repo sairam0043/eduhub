@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Edu Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Edu Hub</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+                <a href="#" class="nav-link logout" onclick="logout()">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Page Content -->
+    <div class="dashboard-page">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Welcome to Edu Hub</h1>
+                <p>Choose your path to success</p>
+            </div>
+            <div class="dashboard-cards">
+                <div class="dashboard-card" onclick="window.location.href='mentor.html'">
+                    <div class="card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Mentor/Guide</h3>
+                    <p>Get personalized guidance from industry experts and build your career roadmap</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="dashboard-card" onclick="window.location.href='internship.html'">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Internships</h3>
+                    <p>Discover amazing internship opportunities and kickstart your professional journey</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-chatbot">
+            <button class="chatbot-btn">
+                <i class="fas fa-comments"></i>
+                <span>How can I help you?</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Logout function
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                showNotification('Logged out successfully!', 'success');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            }
+        }
+
+        // Initialize chatbot
+        document.querySelector('.chatbot-btn').addEventListener('click', function() {
+            showNotification('Chatbot feature coming soon!', 'info');
+        });
+    </script>
+</body>
+</html>
