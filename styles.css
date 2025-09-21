@@ -136,6 +136,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* Page Management */
@@ -178,6 +179,9 @@ body {
 
 .hero-left {
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo-section {
@@ -238,6 +242,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 500px;
 }
 
 .illustration {
@@ -319,6 +324,10 @@ body {
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .section-header h2 {
@@ -339,6 +348,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .feature-card {
@@ -393,6 +405,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .stat-item {
@@ -423,6 +438,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .testimonial-card {
@@ -481,6 +499,12 @@ body {
     padding: 6rem 0;
     background: linear-gradient(135deg, #FF6B35, #e55a2b);
     text-align: center;
+}
+
+.cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .cta-content h2 {
